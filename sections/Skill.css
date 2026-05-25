@@ -1,0 +1,213 @@
+.skill-section{
+
+  padding:100px 7%;
+
+  background:#f5f1eb;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+/* title */
+
+.skill-title{
+
+  text-align:center;
+
+  font-size:58px;
+
+  color:#4b3636;
+
+  margin-bottom:80px;
+
+  font-family:'Patrick Hand',cursive;
+
+  position:relative;
+}
+
+.skill-title::after{
+
+  content:"";
+
+  width:200px;
+
+  height:3px;
+
+  background:#f4a261;
+
+  position:absolute;
+
+  bottom:-10px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  border-radius:10px;
+}
+
+/* timeline */
+
+.timeline-line{
+
+  width:82%;
+
+  height:6px;
+
+  background:#d4c1a7;
+
+  margin:0 auto 60px;
+
+  border-radius:10px;
+}
+
+/* container */
+
+.skills-container{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:26px;
+
+  max-width:1100px;
+
+  margin:auto;
+}
+
+/* skill card */
+
+.skill-card{
+
+  position:relative;
+
+  width:120px;
+
+  background:white;
+
+  border-radius:12px;
+
+  padding:14px 12px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.07);
+
+  transition:0.35s;
+
+  cursor:pointer;
+}
+
+/* connector line */
+
+.connector{
+
+  position:absolute;
+
+  top:-24px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:2px;
+
+  height:24px;
+
+  background:#b7a58f;
+}
+
+/* connector circle */
+
+.connector-circle{
+
+  position:absolute;
+
+  top:-34px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:12px;
+
+  height:12px;
+
+  border-radius:50%;
+
+  background:#f5f1eb;
+
+  border:2px solid #b7a58f;
+}
+
+/* icon */
+
+.skill-icon{
+
+  font-size:20px;
+
+  color:#f4a261;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
+
+/* text */
+
+.skill-card span{
+
+  font-size:14px;
+
+  font-weight:600;
+
+  color:#4b3636;
+
+  font-family:'Inter',sans-serif;
+}
+
+/* hover */
+
+.skill-card:hover{
+
+  transform:translateY(-6px) scale(1.04);
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* responsive */
+
+@media screen and (max-width:768px){
+
+  .skill-title{
+    font-size:46px;
+  }
+
+  .timeline-line{
+    width:90%;
+  }
+
+  .skills-container{
+    gap:20px;
+  }
+
+  .skill-card{
+    width:110px;
+    padding:12px 10px;
+  }
+
+  .skill-card span{
+    font-size:13px;
+  }
+
+}

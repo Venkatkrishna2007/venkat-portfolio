@@ -1,0 +1,190 @@
+.competitive-section{
+  min-height:100vh;
+  background:#f5f1ea;
+  padding:80px 8%;
+  overflow:hidden;
+}
+
+.competitive-title{
+  text-align:center;
+  font-family:'Patrick Hand',cursive;
+  font-size:62px;
+  color:#3d2c2c;
+}
+
+.competitive-subtitle{
+  text-align:center;
+  margin-top:10px;
+  font-size:18px;
+  color:#7a6969;
+  margin-bottom:60px;
+  font-family:'Inter',sans-serif;
+}
+
+.competitive-cards{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  position:relative;
+}
+
+/* layered card effect */
+
+.competitive-card{
+  width:100%;
+  max-width:950px;
+
+  margin:auto;
+
+  background:rgba(255,255,255,0.75);
+
+  backdrop-filter:blur(12px);
+
+  border-radius:24px;
+
+  padding:28px 32px;
+
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+
+  border:1px solid rgba(255,255,255,0.7);
+
+  position:sticky;
+
+  top:100px;
+
+  margin-bottom:35px;
+
+  transition:0.4s ease;
+}
+
+/* smooth floating hover */
+
+.competitive-card:hover{
+  transform:translateY(-6px) scale(1.01);
+}
+
+.card-top{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.platform-icon{
+  width:55px;
+  height:55px;
+
+  border-radius:16px;
+
+  background:#fff3e0;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:24px;
+  color:#f59e0b;
+
+  flex-shrink:0;
+}
+
+.card-top h2{
+  font-family:'Patrick Hand',cursive;
+  font-size:34px;
+  color:#3d2c2c;
+}
+
+.card-top h4{
+  font-size:16px;
+  color:#7a6969;
+  margin-top:3px;
+}
+
+.platform-description{
+  font-size:17px;
+  line-height:1.8;
+  color:#4b3a3a;
+  margin-bottom:22px;
+  font-family:'Inter',sans-serif;
+}
+
+/* compact stats */
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+.stat-box{
+  background:#fffdf9;
+
+  padding:18px;
+
+  border-radius:14px;
+
+  text-align:center;
+
+  border:1px solid #f0e4d7;
+}
+
+.stat-box span{
+  font-size:13px;
+  color:#7a6969;
+  font-family:'Inter',sans-serif;
+}
+
+.stat-box h3{
+  margin-top:8px;
+
+  font-size:28px;
+
+  font-family:'Patrick Hand',cursive;
+
+  color:#3d2c2c;
+}
+
+/* layered depth */
+
+.competitive-card:nth-child(1){
+  z-index:1;
+}
+
+.competitive-card:nth-child(2){
+  z-index:2;
+}
+
+.competitive-card:nth-child(3){
+  z-index:3;
+}
+
+.competitive-card:nth-child(4){
+  z-index:4;
+}
+
+/* mobile */
+
+@media screen and (max-width:900px){
+
+  .competitive-title{
+    font-size:46px;
+  }
+
+  .competitive-card{
+    padding:22px;
+    top:70px;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+  .card-top h2{
+    font-size:28px;
+  }
+
+  .platform-description{
+    font-size:15px;
+  }
+
+}
