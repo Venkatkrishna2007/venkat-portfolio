@@ -13,14 +13,36 @@
   text-align:center;
 }
 
+/* floating image */
+
 .guestbook-floating img{
 
-  width:340px;
+  width:190px;
 
-  filter:drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+  filter:drop-shadow(0 12px 24px rgba(0,0,0,0.25));
+
+  transition:0.4s;
 }
 
+.guestbook-floating:hover img{
 
+  transform:scale(1.08) rotate(-3deg);
+}
+
+/* floating text */
+
+.guestbook-floating p{
+
+  margin-top:14px;
+
+  font-size:24px;
+
+  font-weight:700;
+
+  color:#4b3a3a;
+
+  font-family:'Patrick Hand',cursive;
+}
 
 /* overlay */
 
@@ -39,6 +61,8 @@
   align-items:center;
 
   z-index:9999;
+
+  padding:20px;
 }
 
 /* modal */
@@ -85,8 +109,11 @@
 }
 
 .entries-page{
+
   border-right:none;
 }
+
+/* headings */
 
 .book-page h2{
 
@@ -123,6 +150,8 @@
   outline:none;
 }
 
+/* submit */
+
 .submit-btn{
 
   background:#f4d96b;
@@ -138,6 +167,13 @@
   cursor:pointer;
 
   font-size:16px;
+
+  transition:0.3s;
+}
+
+.submit-btn:hover{
+
+  transform:translateY(-3px);
 }
 
 /* entries */
@@ -176,7 +212,7 @@
   font-weight:600;
 }
 
-/* close */
+/* close button */
 
 .close-btn{
 
@@ -201,4 +237,119 @@
   font-size:22px;
 
   cursor:pointer;
+
+  transition:0.3s;
+}
+
+.close-btn:hover{
+
+  transform:scale(1.08);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:768px){
+
+  .guestbook-floating{
+
+    right:5%;
+
+    top:180px;
+  }
+
+  .guestbook-floating img{
+
+    width:130px;
+  }
+
+  .guestbook-floating p{
+
+    font-size:18px;
+  }
+
+  /* modal */
+
+  .guestbook-modal{
+
+    width:94%;
+
+    height:88vh;
+
+    grid-template-columns:1fr;
+
+    overflow-y:auto;
+
+    border-radius:20px;
+  }
+
+  .book-page{
+
+    padding:24px;
+
+    border-right:none;
+
+    border-bottom:1px solid #ddd;
+  }
+
+  .entries-page{
+
+    border-bottom:none;
+  }
+
+  .book-page h2{
+
+    font-size:34px;
+
+    margin-bottom:22px;
+  }
+
+  .book-page input,
+  .book-page textarea{
+
+    padding:14px;
+
+    font-size:15px;
+
+    border-radius:10px;
+  }
+
+  .submit-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    font-size:15px;
+  }
+
+  .entries-container{
+
+    gap:16px;
+  }
+
+  .entry p{
+
+    font-size:17px;
+
+    line-height:1.7;
+  }
+
+  .entry span{
+
+    font-size:14px;
+  }
+
+  .close-btn{
+
+    width:42px;
+
+    height:42px;
+
+    font-size:18px;
+
+    top:14px;
+
+    right:14px;
+  }
+
 }

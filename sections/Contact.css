@@ -1,27 +1,44 @@
 .contact-section{
+
   min-height:100vh;
+
   background:#f5f1ea;
+
   padding:100px 8%;
 }
 
+/* title */
+
 .contact-title{
+
   text-align:center;
+
   font-family:'Patrick Hand',cursive;
+
   font-size:62px;
+
   color:#3d2c2c;
+
   margin-bottom:70px;
 }
 
+/* container */
+
 .contact-container{
+
   display:grid;
+
   grid-template-columns:0.9fr 1.1fr;
+
   gap:35px;
+
   align-items:start;
 }
 
 /* left */
 
 .contact-left{
+
   background:rgba(255,255,255,0.75);
 
   backdrop-filter:blur(10px);
@@ -36,28 +53,40 @@
 }
 
 .contact-left h2{
+
   font-family:'Patrick Hand',cursive;
+
   font-size:44px;
+
   margin-bottom:20px;
+
   color:#3d2c2c;
 }
 
 .contact-left p{
+
   font-size:17px;
+
   line-height:1.9;
+
   color:#5b4a4a;
+
   margin-bottom:35px;
 }
 
 /* socials */
 
 .social-links{
+
   display:flex;
+
   flex-direction:column;
+
   gap:18px;
 }
 
 .social-links a{
+
   text-decoration:none;
 
   background:#fffdf9;
@@ -67,7 +96,9 @@
   border-radius:14px;
 
   display:flex;
+
   align-items:center;
+
   gap:14px;
 
   color:#3d2c2c;
@@ -78,12 +109,14 @@
 }
 
 .social-links a:hover{
+
   transform:translateX(8px);
 }
 
 /* form */
 
 .contact-form{
+
   background:rgba(255,255,255,0.75);
 
   backdrop-filter:blur(10px);
@@ -97,24 +130,37 @@
   border:1px solid rgba(255,255,255,0.7);
 
   display:flex;
+
   flex-direction:column;
+
   gap:24px;
 }
 
+/* input group */
+
 .input-group{
+
   display:flex;
+
   flex-direction:column;
+
   gap:10px;
 }
 
 .input-group label{
+
   font-size:16px;
+
   font-weight:600;
+
   color:#4b3a3a;
 }
 
+/* inputs */
+
 .contact-form input,
 .contact-form textarea{
+
   padding:18px;
 
   border:none;
@@ -128,13 +174,19 @@
   outline:none;
 
   border:1px solid #eee;
+
+  font-family:'Inter',sans-serif;
 }
 
 .contact-form textarea{
+
   resize:none;
 }
 
+/* button */
+
 .contact-form button{
+
   margin-top:10px;
 
   background:linear-gradient(
@@ -161,19 +213,97 @@
 }
 
 .contact-form button:hover{
+
   transform:translateY(-5px);
 }
 
-/* mobile */
+/* MOBILE RESPONSIVE */
 
-@media screen and (max-width:900px){
+@media screen and (max-width:768px){
 
-  .contact-container{
-    grid-template-columns:1fr;
+  .contact-section{
+
+    padding:90px 7%;
   }
 
   .contact-title{
-    font-size:46px;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+  }
+
+  .contact-container{
+
+    grid-template-columns:1fr;
+
+    gap:28px;
+  }
+
+  .contact-left,
+  .contact-form{
+
+    padding:24px;
+
+    border-radius:20px;
+  }
+
+  .contact-left h2{
+
+    font-size:34px;
+  }
+
+  .contact-left p{
+
+    font-size:15px;
+
+    line-height:1.8;
+  }
+
+  .social-links{
+
+    gap:14px;
+  }
+
+  .social-links a{
+
+    padding:14px 16px;
+
+    font-size:15px;
+  }
+
+  .contact-form{
+
+    gap:20px;
+  }
+
+  .input-group{
+
+    gap:8px;
+  }
+
+  .input-group label{
+
+    font-size:15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+
+    padding:15px;
+
+    font-size:15px;
+
+    border-radius:12px;
+  }
+
+  .contact-form button{
+
+    padding:15px;
+
+    font-size:16px;
+
+    border-radius:12px;
   }
 
 }
