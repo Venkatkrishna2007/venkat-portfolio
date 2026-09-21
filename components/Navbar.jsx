@@ -43,7 +43,7 @@ const Navbar = () => {
       {/* resume button */}
 
       <a
-        href="https://drive.google.com/file/d/1Puw1ToSVuksz6WStAjULP-g6vogGIziX/view?usp=sharing"
+        href="https://drive.google.com/file/d/1JQ0Mk_USOmJeDhkmhAs00naHdjejXBWZ/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="resume-btn"
